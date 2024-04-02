@@ -1,0 +1,351 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.welcome-text {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.login-container,
+.register-container {
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 0 1rem;
+  width: 300px; 
+}
+
+.auth-header {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container input {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-container button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.auth-switch {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.auth-link {
+  color: #007bff;
+  cursor: pointer;
+  background: white;
+  border: solid white;
+  font-size: inherit;
+}
+
+.movies-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.movies-heading {
+  font-size: 3rem;
+  margin-bottom: 4rem;
+  color: #333;
+  margin-top: 2px;
+}
+
+.movies-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.movie-item {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.movie-item:hover {
+  transform: translateY(-5px);
+}
+
+.movie-image {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.movie-details {
+  padding: 1.5rem;
+}
+
+.movie-title {
+  font-size: 1.8rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.movie-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.movie-showtimes {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #888;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* BookTickets.css */
+
+/* Main container */
+.book-tickets-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.book-tickets-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Theater name */
+.theater-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Theater location */
+.theater-location {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Dropdowns container */
+.dropdowns-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Dropdown label */
+.dropdown-label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Dropdown select */
+.dropdown-select {
+  width: 200px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Date input */
+.date-input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Seating layout */
+.seating-layout {
+  margin-top: 20px;
+}
+
+/* Seat */
+.seat {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.available {
+  background-color: #4caf50; /* Green */
+}
+
+.selected {
+  background-color: #2196f3; /* Blue */
+}
+
+.booked {
+  background-color: #f44336; /* Red */
+}
+
+/* Screen info */
+.screen-info {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Book button */
+.book-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #2196f3; /* Blue */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-button:hover {
+  background-color: #0d47a1; /* Dark blue */
+}
+
+/* Success message */
+.success-message {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #4caf50; /* Green */
+}
+
+/* Error message */
+.error-message {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #f44336; /* Red */
+}
+
+/* MovieDetails.css */
+
+/* Main container */
+.movie-details-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Heading */
+.movie-details-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Theater link */
+.theater-link {
+  text-decoration: none;
+}
+
+/* Theater card */
+.theater-card {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.theater-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Theater name */
+.theater-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Theater location */
+.theater-location {
+  font-size: 1rem;
+  color: #666;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .auth-container {
+    flex-direction: column;
+  }
+
+  .login-container,
+  .register-container {
+    margin: 0;
+    margin-top: 1rem;
+  }
+  .movie-item {
+    flex-basis: calc(50% - 50px); 
+  }
+}
+
